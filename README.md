@@ -41,6 +41,17 @@ return [
 
 ```
 
+Replace the `Slim\App` by `Mdojr\SlimAnnotations\App`
+
+```php
+<?php
+
+// index.php
+// $app = new Slim\App($config)
+$app = new Mdojr\SlimAnnotations\App($config)
+
+```
+
 Note: When using the **routerCacheFile** option, you will need to remove the cached file fist.
 The annotations will not be parsed if the file exists.
 

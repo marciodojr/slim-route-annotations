@@ -7,7 +7,6 @@ use Slim\Http\Request;
 use Slim\Http\Response;
 use Slim\Http\Environment;
 use Mdojr\SlimAnnotations\App;
-use Monolog\Logger;
 
 class TestCase extends BaseTestCase
 {
@@ -18,11 +17,6 @@ class TestCase extends BaseTestCase
         $this->app = new App([
             'settings' => [
                 'displayErrorDetails' => true,
-                'logger' => [
-                    'name' => 'router-test',
-                    'level' => Logger::DEBUG,
-                    'path' => 'php://stdout',
-                ],
                 'routeAnnotations' => [
                     [
                         'dir' => __DIR__ . '/Action',
