@@ -52,14 +52,14 @@ $app = new Mdojr\SlimAnnotations\App($config)
 
 ```
 
-Note: When using the **routerCacheFile** option, you will need to remove the cached file fist.
+Note: When using the **routerCacheFile** option, you will need to remove the cached file first.
 The annotations will not be parsed if the file exists.
 
-## Use
+## Usage
 
 Add the **@Route** annotation to the methods you want to bind a route.
 The attributes **methods** and **middlewares** are optional, if the attribute **methods**
-is not specified then all methods will be allowed (like  **$app->any** in Slim).
+is not specified then all methods will be allowed (like  `$app->any` in Slim).
 
 ```php
 <?php
