@@ -41,7 +41,7 @@ return [
 
 ```
 
-Replace the `Slim\App` by `Mdojr\SlimAnnotations\App`
+Replace `Slim\App` with `Mdojr\SlimAnnotations\App`
 
 ```php
 <?php
